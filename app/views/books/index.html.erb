@@ -1,5 +1,8 @@
 <h1>this is the books page</h1>
 
 <% @books.each do |book| %>
-<h3>"<%= book.title %>"</h3>
+<ul>
+<li><h3>Book title: <%= book.title %></h3></li>
+<li><h4>Written by:<%= book.author %></h4></li>
+<ul>
 <% end %>
